@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.active_success {
+  @apply opacity-100 translate-y-0;
+}
