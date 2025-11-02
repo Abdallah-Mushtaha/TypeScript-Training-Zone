@@ -29,6 +29,7 @@ const SuccesBox = useRef<HTMLDivElement>(null);
   };
 const CopyPasswordToClipbord = (e: React.MouseEvent<HTMLButtonElement>) => {
   e.preventDefault();
+  if(PasswordLength==0)return;
   navigator.clipboard.writeText(Password);
 SuccesBox.current?.classList.add("active_success");
 setTimeout(() => {
